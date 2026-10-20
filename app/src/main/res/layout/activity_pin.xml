@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alumbrado IoT"
+            android:textColor="#212121"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tituloPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Ingresa tu PIN"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/campoPin"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="PIN"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/campoConfirmar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:hint="Repite el PIN"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:textColor="#212121"
+            android:textColorHint="#9E9E9E"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/botonPin"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Entrar" />
+
+        <TextView
+            android:id="@+id/mensajePin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textColor="#C62828"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>
